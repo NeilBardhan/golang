@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 var deckSize int //Variable can be declared outside func main
+//var deckSize = 52 This is also valid
 //b := 5 This is an error; this cannot be done outside func main, valid within func main
 
 func main(){
