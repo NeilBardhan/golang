@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type deck []string
+type deck []string //defines the type 'deck' as a slice of strings
 
 // This is a receiver function for a deck type. It prints out all elements in a deck
 func (d deck) print() {
