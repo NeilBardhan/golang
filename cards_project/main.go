@@ -1,17 +1,11 @@
 package main
 
 func main() {
-	//cards := []string{newCard(), "5D", newCard()}
-	cards := deck{newCard(), "5D", newCard()}
+	cards := deck{newCard(), "5D", newCard()} //Creates an object of type deck
 	cards = append(cards, "QD")
-	// fmt.Println("Cards : ", cards)
-
-	// for i, card := range cards { //for loops in go, discard 'i' and 'card' values after each iteration
-	// 	fmt.Println("Index : ", i, "||", "Card : ", card)
-	// }
-	cards.print()
+	cards.print() //Calls the print method from deck
 }
 
-func newCard() string { //implies we are returning a string
+func newCard() string {
 	return "QS"
 }
