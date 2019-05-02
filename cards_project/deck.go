@@ -23,3 +23,8 @@ func (d deck) print() {
 		fmt.Println("Index : ", i, "||", "Card : ", card)
 	}
 }
+
+//this function returns 2 values of type 'deck'
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
