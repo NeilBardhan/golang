@@ -17,6 +17,11 @@ func main() {
 	fmt.Println("+------------REMAINING DECK------------+")
 	remainingDeck.print()
 	t := time.Now()
+	handStr := hand.toString() //Convert deck type to 1 string
+	byteStr := []byte(handStr) //Convert string to byte slice
+	fmt.Println("String Hand : ", handStr)
+	fmt.Println("Byte Hand : ", byteStr)
+	hand.saveToFile("hand1.txt") //Write hand of type deck to file
 	elapsed := t.Sub(start)
 	fmt.Println("Time elapsed : ", elapsed)
 }
