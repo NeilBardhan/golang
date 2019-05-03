@@ -31,11 +31,10 @@ func deal(d deck, handSize int) (deck, deck) {
 
 //deck type to string
 func (d deck) toString() string {
-	//Type conversion from deck type to slice of strings
-	return strings.Join([]string(d), ",")
+	return strings.Join([]string(d), ",") //Type conversion from deck type to slice of strings
 }
 
 //write hand to file
 func (d deck) saveToFile(filename string) error {
-	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
+	return ioutil.WriteFile(filename, []byte(d.toString()), 0666) //Converts deck to string then byte slice and writes to file
 }
